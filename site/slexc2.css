@@ -6,10 +6,6 @@ html,body
 	user-select: none;
 }
 
-#bigbrother
-{
-	padding-bottom: 5%;
-}
 
 .image-container
 {
@@ -46,9 +42,7 @@ html,body
 	margin-right: auto;
 	overflow: hidden;
 	text-align: center;
-	//box-shadow: 0px 0px 20px #888888;
-	padding-bottom: 5%;
-	
+	//box-shadow: 0px 0px 20px #888888;	
 }
 
 
