@@ -6,6 +6,11 @@ html,body
 	user-select: none;
 }
 
+#bigbrother
+{
+	position: absolute;
+	top: 10%;	
+}
 
 .image-container
 {
@@ -64,13 +69,6 @@ html,body
 	height: 18.5px;
 	background-color: hsl(0,0%,15%);
 	border-radius: 20%;
-}
-
-.buttons
-{
-	position: relative;
-	width: auto;
-	height: auto;
 }
 
 .b
