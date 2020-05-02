@@ -66,6 +66,13 @@ html,body
 	border-radius: 20%;
 }
 
+.buttons
+{
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
 .b
 {
 	display: inline-block;
