@@ -9,7 +9,10 @@ html,body
 #bigbrother
 {
 	position: absolute;
-	top: 10%;	
+	margin: 0;
+	padding: 0;
+	top: 10vw;	
+	width: 100%;
 }
 
 .image-container
@@ -19,6 +22,8 @@ html,body
 	position: relative;
 	left: 0;
 	transition: left 2s;
+	margin: 0;
+
 }
 
 /*
@@ -42,7 +47,8 @@ html,body
 {
 	position: relative;
 	width:50%;
-	height: 80%;
+	height: 70%;
+	margin: 0;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
@@ -57,14 +63,17 @@ html,body
 	float: left;
 	width: 10%;
 	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 #num
 {
 	position: absolute;
+	top: 0vw;
 	right: 0%;
-	padding: 5px 10px;
-	margin-right: 2px;
+	padding: 0.5vw 1vw;
+	margin-right: 0.5vw;
 	color: white;
 	height: 2vw;
 	width: 3vw;
@@ -73,14 +82,21 @@ html,body
 	border-radius: 20%;
 }
 
+.buttons
+{
+	display: inline-block;
+	padding: 0.1% 0 0;
+}
+
 .b
 {
 	display: inline-block;
-	height: 1vw;
-	width: 1vw;
-	border-radius: 50%;
-	margin-top: 0.5vw;
 	background-color: #bbb;
+	height: 1vh
+	width: 1vw;
+	padding: 0.5vw;
+	margin: 0 0.1vw 0 0;
+	border-radius: 50%;
 }
 
 marquee
@@ -118,21 +134,21 @@ marquee
 #a1 , #a2
 {
 	position: absolute;
-	top: 45%;
+	top: 13vw;
 	font-size: 3vw;
 	//background-color: black;
 	color: white;
-	padding: 8px 8px; 
+	padding: 1vw 1vw; 
 }
 
 #a1
 {
-	left: 0%;
+	left: 0vw;
 }
 
 #a2
 {
-	right: 0%;
+	right: 0vw;
 }
 a:hover
 {
@@ -162,5 +178,3 @@ span:hover
 	//text-shadow: 8px 8px 5px hsla(240,100%,50%,1);
 }
 */
-
-
