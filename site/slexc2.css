@@ -35,7 +35,6 @@ html,body
 	margin: 250px 500px 500px 500px;
 	transition: height 2s, width 2s, transform 2s;
 }
-
 #box:hover
 {
 	height: 500px;
@@ -84,18 +83,17 @@ html,body
 
 .buttons
 {
-	display: inline-block;
-	padding: 0.1% 0 0;
+	text-align: center;
+	padding-top: 0.5vw;
 }
 
 .b
 {
 	display: inline-block;
 	background-color: #bbb;
-	height: 1vh
 	width: 1vw;
-	padding: 0.5vw;
-	margin: 0 0.1vw 0 0;
+	height: 1vw;
+	margin: 0 0.1% 0 0;
 	border-radius: 50%;
 }
 
@@ -105,7 +103,6 @@ marquee
 }
 
 /*
-
 #num
 {
 	position: absolute;
@@ -119,8 +116,6 @@ marquee
 	border-radius: 20%;
 	//transition: opacity 1s linear;
 }
-
-
 #controls
 {	
 	position: absolute;
@@ -129,7 +124,6 @@ marquee
 	left: 25%;
 	//background-color: red;
 }
-
 */
 #a1 , #a2
 {
@@ -159,7 +153,6 @@ a:active
 {
 	background-color: red;
 }
-
 span
 {
 	background-color: #bbb;
@@ -167,10 +160,7 @@ span
 	font-size: 10px;
 	padding: 0px 5px;
 	margin: 2px;
-
 }
-
-
 span:hover
 {
 	cursor: pointer;
