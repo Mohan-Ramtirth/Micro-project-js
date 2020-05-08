@@ -136,7 +136,7 @@ function checkCookie()
 
 	if(user != "")
 	{
-		//alert("Welcome again "+user);
+		alert("Welcome again "+user);
 	}
 	else
 	{
