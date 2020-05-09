@@ -1,7 +1,12 @@
 var j,n,i=0;
 
 	var s = ["m1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg","image6.jpg"];
-			
+		
+		function togg()
+		{
+			var element = document.body;
+			element.classList.toggle("light-mode");
+		}	
 
 		function slide()
 		{

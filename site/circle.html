@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>circle</title>
+	<link rel="stylesheet" type="text/css" href="circlec.css">
+</head>
+<body>
+	<div id="circle1"></div>
+	<div id="shadow"></div>
+	<canvas id="counter" height="200px" width="200px"></canvas>
+
+	<script type="text/javascript">
+		var counter = document.getElementById('counter').getContext('2d');
+		var no = 0;
+		counter.font = "bold 25px arial";
+
+
+		var pointToFill = 4.72;
+		var cw = counter.canvas.width;
+		var ch = counter.canvas.height;
+		var diff;
+
+		function fillcounter(){
+
+			diff = ((no/100) * 2*Math.PI * 10);
+			counter.clearRect(0,0,cw,ch);
+
+			var gradient = counter.createLinearGradient(0, 0, 170, 0);
+			gradient.addColorStop("0", "magenta");
+			gradient.addColorStop("0.5" ,"blue");
+			gradient.addColorStop("1.0", "red");
+			
+			counter.strokeStyle = gradient;
+			counter.lineWidth = 15;
+			counter.fillStyle = "blue";
+			counter.textAlign = "center";
+			
+			counter.fillText(no+'%',100,110);
+
+			counter.beginPath();
+			counter.arc(100,100,90,pointToFill,diff/10 + pointToFill);
+			counter.stroke();
+
+			if(no >= 100)
+			{
+				clearTimeout(fill);
+				location.replace("slexer2.html");
+			}
+			
+			no++;
+		}
+
+		var fill = setInterval(fillcounter,200);
+
+
+	</script>
+</body>
+</html>
