@@ -26,13 +26,18 @@
 			counter.clearRect(0,0,cw,ch);
 
 			var gradient = counter.createLinearGradient(0, 0, 170, 0);
-			gradient.addColorStop("0", "magenta");
-			gradient.addColorStop("0.5" ,"blue");
-			gradient.addColorStop("1.0", "red");
+			var gradient1 = counter.createLinearGradient(0, 0, 170, 0);
+
+			//gradient.addColorStop("0", "magenta");
+			//gradient.addColorStop("0.5" ,"blue");
+			gradient.addColorStop("0", "red");
+			gradient.addColorStop("1.0", "orange");
+			gradient1.addColorStop("0", "blue");
+			gradient1.addColorStop("1.0", "lime");
 			
 			counter.strokeStyle = gradient;
 			counter.lineWidth = 15;
-			counter.fillStyle = "blue";
+			counter.fillStyle = gradient1;
 			counter.textAlign = "center";
 			
 			counter.fillText(no+'%',100,110);
@@ -44,13 +49,13 @@
 			if(no >= 100)
 			{
 				clearTimeout(fill);
-				location.replace("slexer2.html");
+				//location.replace("slexer2.html");
 			}
 			
 			no++;
 		}
 
-		var fill = setInterval(fillcounter,200);
+		var fill = setInterval(fillcounter,50);
 
 
 	</script>
