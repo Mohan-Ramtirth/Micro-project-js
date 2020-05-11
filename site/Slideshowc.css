@@ -23,19 +23,19 @@ body
 	background-color: black;
 	color: white;
 }
-/*
+
 .light-mode
 {
 	background-color: white;
 	color: black;
 }
-*/
+
 #bigbrother
 {
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	top: 10vw;	
+	top: 5vw;	
 	width: 100%;
 }
 
@@ -69,7 +69,7 @@ body
 .container
 {
 	position: relative;
-	width:50%;
+	width:70%;
 	height: 70%;
 	margin: 0;
 	margin-left: auto;
@@ -213,7 +213,7 @@ marquee
 #a1 , #a2
 {
 	position: absolute;
-	top: 13vw;
+	top: 17vw;
 	font-size: 3vw;
 	//background-color: black;
 	color: white;

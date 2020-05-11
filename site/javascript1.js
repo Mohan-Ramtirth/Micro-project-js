@@ -103,6 +103,9 @@ var j,n,i=0;
 
 						case 39: Pslide();
 								 break; 
+
+						case 84: togg();
+						         break;
 					}
 				}
 

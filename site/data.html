@@ -1,0 +1,26 @@
+@{
+var db = Database.Open("MohanR"); 
+var query = "SELECT * FROM Product"; 
+}
+<html> 
+<body> 
+<h1>Small Bakery Products</h1> 
+<table border="1" width="100%"> 
+<tr>
+<th>Id</th> 
+<th>ProductName</th> 
+<th>Cost</th> 
+<th>Weight</th> 
+</tr>
+@foreach(var row in db.Query(query))
+{
+<tr> 
+<td>@row.Id</td> 
+<td>@row.ProductName</td> 
+<td>@row.Cost</td> 
+<td style="text-align:right">@row.Weight</td> 
+</tr> 
+}
+</table> 
+</body> 
+</html>
