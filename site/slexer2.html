@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Microproject Of JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="slexc2.css">
+
+
+	<script type="text/javascript">
+
+	var j,n,i=0;
+
+	var s = ["m1.jpg","image2.jfif","image3.jfif","image4.jfif","image5.jfif","image6.jfif"];
+			
+
+		function slide()
+		{
+			document.querySelectorAll(".b").item(j).style.backgroundColor="#bbb";
+			document.querySelectorAll(".b").item(i).style.backgroundColor="dodgerblue";
+			
+				page();	
+			
+
+		}
+
+			
+		
+
+		
+
+		function page()
+		{
+			document.getElementById("num").innerHTML = i+1+"/"+s.length;
+			document.querySelector("#num").style.opacity="1";
+			document.querySelector("#num").style.transition="opacity 2s ease";				
+				setTimeout(function(){
+				document.querySelector("#num").style.opacity="0";
+
+			},2000);
+		}
+
+
+		function dot(k)
+		{
+			var x = document.querySelectorAll(".b");
+
+				i=k;
+				page();
+
+
+					for(j=0;j<=5;j++)
+					{
+						document.querySelectorAll(".b").item(j).style.backgroundColor="#bbb";
+				
+					}
+			 	
+				document.querySelectorAll(".b").item(k).style.backgroundColor="dodgerblue";
+				
+				document.querySelector(".image-container").style.left="-"+k+"00%";
+
+		}
+
+
+		
+		function Mslide()
+		{
+			j=i;
+			i=i-1;
+
+					if(i<0)
+					{
+						i=0;
+					}
+
+				document.querySelector(".image-container").style.left="-"+i+"00%";
+
+
+				slide();
+		}	
+
+
+
+		function Pslide()
+		{
+			j=i;
+			i=i+1;
+			
+					if(i>5)
+					{
+						i=5;
+					}
+
+
+				document.querySelector(".image-container").style.left="-"+i+"00%";	
+				
+
+				slide();
+
+		}
+
+
+	document.onkeydown = function(event)
+				{
+					switch(event.keyCode)
+					{
+						case 37: Mslide();
+								 break;
+
+						case 39: Pslide();
+								 break; 
+					}
+				}
+		
+	</script>
+	</head>
+
+	<body>
+
+		<div id="bigbrother">
+		
+		<marquee>
+			<h1>This Is Responsive Website Of Slideshow!</h1>
+		</marquee>
+		<div class="container">
+
+			<div class="image-container">
+
+				<img class = "images" src="images/image1.jfif">
+				<img class = "images" src="images/image2.jfif">
+				<img class = "images" src="images/image3.jfif">
+				<img class = "images" src="images/image4.jfif">
+				<img class = "images" src="images/image5.jfif">
+				<img class = "images" src="images/image6.jfif">
+
+			
+			</div>
+			<div id = "num">
+			1/6
+			</div>
+
+				<a id="a1"  onclick="Mslide();">&#10094;</a>
+				<a id = "a2"  onclick="Pslide();">&#10095;</a>
+
+
+			<div class="buttons">
+				<a  class="b" onclick="dot(0);" style="background-color: dodgerblue;"></a>
+				<a  class="b"	onclick="dot(1);"></a>
+				<a  class="b"	onclick="dot(2);"></a>
+				<a  class="b"	onclick="dot(3);"></a>
+				<a  class="b"	onclick="dot(4);"></a>
+				<a  class="b"	onclick="dot(5);"></a>
+				
+			</div>
+			</div>
+
+			</div>
+			
+			
+
+		
+	<script type="text/javascript">
+				
+			
+			var m;
+			var elem = document.querySelectorAll(".b");
+			var a = document.querySelectorAll("a");
+
+			document.querySelector(".container").addEventListener("mouseover",imover);
+			document.querySelector(".container").addEventListener("mouseout",imout);
+
+			function imover()
+			{
+				a[0].style.display = "block";
+				a[1].style.display = "block";
+			}
+
+			function imout()
+			{
+				a[0].style.display = "none";
+				a[1].style.display = "none";
+			}
+			function add(event){
+					if(event.target.style.backgroundColor!="dodgerblue")
+					{
+						event.target.style.backgroundColor="skyblue";
+
+					}
+				}
+
+				function sub(event)
+				{
+					if(event.target.style.backgroundColor!="dodgerblue")
+					{
+						event.target.style.backgroundColor="#bbb";
+					}
+				}
+					
+				function aover(event)
+				{
+					if(i==0 && event.target == a[0])
+					{
+						a[0].style.backgroundColor="transparent";
+						a[0].style.cursor = "not-allowed";				
+				
+
+					}
+					else if(i==5 && event.target == a[1])
+					{
+						a[1].style.backgroundColor="transparent";
+						a[1].style.cursor = "not-allowed";
+					}
+					else
+					{
+						event.target.style.backgroundColor="rgba(0,0,0,0.8)";
+						event.target.style.cursor = "pointer";
+					}
+				}
+
+				function aout(event)
+				{
+					event.target.style.backgroundColor = "transparent";
+				}
+
+
+			for(m=0;m<2;m++)
+			{
+				a[m].addEventListener("mouseover",aover);
+				a[m].addEventListener("mouseout",aout);
+			}
+			for(m=0;m<elem.length;m++)
+			{
+				elem[m].addEventListener("mouseover",add);
+				elem[m].addEventListener("mouseout",sub);
+				
+				
+			}
+
+			
+	</script>
+
+	</body>
+
+</html>
