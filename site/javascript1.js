@@ -5,7 +5,22 @@ var j,n,i=0;
 		function togg()
 		{
 			var element = document.body;
+			var icon = document.querySelector("#icon");
+			var fa = document.querySelector(".fa");
 			element.classList.toggle("light-mode");
+			if (element.className == "light-mode")
+			 {
+			 	icon.style.backgroundColor = "black";
+			 	fa.style.color = "white";
+
+			 }
+			 else
+			 {
+			 	icon.style.backgroundColor = "white";
+			 	fa.style.color = "grey";
+
+			 }
+
 		}	
 
 		function slide()

@@ -5,19 +5,19 @@ html,body
 	overflow: hidden;
 	user-select: none;
 }
-
+/*
 button
 {
 	position: absolute;
-	top: 1;
+	top: 1vw;
 	right: 0;
-	height: 5vw;
-	width: 8vw;
-	font-size: 1.5vw;
+	//height: 5vw;
+	//width: 8vw;
+	//font-size: 1.5vw;
 	padding: 0;
 	margin: 0;
 }
-
+*/
 body
 {
 	background-color: black;
@@ -35,7 +35,8 @@ body
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	top: 5vw;	
+	top: 50%;
+	transform: translateY(-50%);	
 	width: 100%;
 }
 
@@ -50,22 +51,6 @@ body
 
 }
 
-/*
-#box
-{
-	height: 100px;
-	width: 100px;
-	background-color: red;
-	margin: 250px 500px 500px 500px;
-	transition: height 2s, width 2s, transform 2s;
-}
-#box:hover
-{
-	height: 500px;
-	width: 500px;
-	transform: rotate(180deg);
-}
-*/
 .container
 {
 	position: relative;
@@ -105,6 +90,22 @@ body
 	border-radius: 20%;
 }
 
+.fa
+{
+	font-size: 3vw;
+	color: grey;
+	margin: 0.5vw 1vw;
+}
+
+#icon
+{
+	position: absolute;
+	top: 3vw;
+	right: 3vw;
+	background-color: white;
+	border-radius: 50%;
+
+}
 
 #controls
 {	
@@ -165,51 +166,7 @@ body
 	}
 	
 }
-/*
 
-.buttons
-{
-	text-align: center;
-	padding-top: 0.5vw;
-}
-
-.b
-{
-	display: inline-block;
-	background-color: #bbb;
-	width: 1vw;
-	height: 1vw;
-	margin: 0 0.1% 0 0;
-	border-radius: 50%;
-}
-
-marquee
-{
-	font-size: 25px
-}
-
-#num
-{
-	position: absolute;
-	top: 0;
-	right: 25%;
-	padding: 5px 10px;
-	margin-right: 2px;
-	color: white;
-	height: 18.5px;
-	background-color: hsl(0,0%,15%);
-	border-radius: 20%;
-	//transition: opacity 1s linear;
-}
-#controls
-{	
-	position: absolute;
-	width: 50%;
-	text-align: center;
-	left: 25%;
-	//background-color: red;
-}
-*/
 #a1 , #a2
 {
 	position: absolute;
@@ -233,23 +190,3 @@ a:hover
 {
 	cursor: pointer;
 }
-/*
-a:active
-{
-	background-color: red;
-}
-span
-{
-	background-color: #bbb;
-	border-radius: 50%;	
-	font-size: 10px;
-	padding: 0px 5px;
-	margin: 2px;
-}
-span:hover
-{
-	cursor: pointer;
-	//background-color: hsl(200,100%,50%);
-	//text-shadow: 8px 8px 5px hsla(240,100%,50%,1);
-}
-*/
