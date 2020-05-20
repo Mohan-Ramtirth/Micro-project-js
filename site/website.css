@@ -1,0 +1,91 @@
+body
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.sidebar
+{
+	display: block;
+	white-space: nowrap;
+	width: 0;
+	height: 100%;
+	padding-top: 10vw;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+nav
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	background-color: cornflowerblue;
+	width: 100%;
+	text-align: center;
+	transition: 0.3s;
+
+}
+
+nav a
+{
+	font-size: 4vw;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+	text-decoration: none;
+	color: white;
+}
+
+
+.sidebar a
+{
+	color: #818181;
+	padding-left: 3.5vw;
+	text-decoration: none;
+	font-size: 3vw;
+	width: 100%;
+}
+
+.sidebar a:hover
+{
+	color: #f1f1f1;
+}
+
+
+#close
+{
+	position: absolute;
+	top: 0;
+	right: 2vw;
+	font-size: 5vw;
+	font-weight: bold;
+	width: auto;
+}
+
+nav a:hover
+{
+	background-color: lightblue;
+}
+
+.current
+{
+	background-color: #73c2fb;
+}
+
+@media only screen and (min-width: 800px)
+{
+	nav a
+	{
+		font-size: 30px;
+
+	}
+}
+

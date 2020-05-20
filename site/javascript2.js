@@ -1,6 +1,6 @@
 var m;
 			var elem = document.querySelectorAll(".b");
-			var a = document.querySelectorAll("a");
+			var a = document.querySelectorAll(".spec");
 
 			document.querySelector(".container").addEventListener("mouseover",imover);
 			document.querySelector(".container").addEventListener("mouseout",imout);
@@ -18,7 +18,7 @@ var m;
 				a[0].style.display = "none";
 				a[1].style.display = "none";
 			}
-			function add(event){
+			function addC(event){
 					if(event.target.style.backgroundColor!="dodgerblue")
 					{
 						event.target.style.backgroundColor="skyblue";
@@ -26,7 +26,7 @@ var m;
 					}
 				}
 
-				function sub(event)
+				function subC(event)
 				{
 					if(event.target.style.backgroundColor!="dodgerblue")
 					{
@@ -68,8 +68,8 @@ var m;
 			}
 			for(m=0;m<elem.length;m++)
 			{
-				elem[m].addEventListener("mouseover",add);
-				elem[m].addEventListener("mouseout",sub);
+				elem[m].addEventListener("mouseover",addC);
+				elem[m].addEventListener("mouseout",subC);
 				
 				
 			}

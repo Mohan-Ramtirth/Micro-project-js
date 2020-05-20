@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="website.css">
+
+	
+
+</head>
+<body>
+	<div class="sidebar">
+		<a href="#" onclick="closeSidebar();" id="close">&times;</a>
+		<a href="mailto:mohan.ramtirth1732003@gmail.com"><i class="fa  fa-envelope"></i>&ensp;Contact</a>
+
+	</div>
+	
+	<nav>
+		<a href="#" onclick="showSidebar();" id="more">&#9776;</a>
+		<a href="website.html" class="current"><i class="fa fa-fw fa-home"></i></a>
+		<a href="Slideshow.html">Slideshow</a>
+		
+	</nav>
+
+<script type="text/javascript">
+
+			var nav = document.querySelector("nav");
+			var sidebar = document.querySelector(".sidebar");
+			var more = document.querySelector("#more");
+		
+		function showSidebar()
+		{
+			sidebar.style.width = "35vw";
+			nav.style.marginLeft = "35vw";
+			more.style.display = "none";
+
+		}
+
+		function closeSidebar()
+		{
+			sidebar.style.width = "0";
+			nav.style.marginLeft = "0";
+			more.style.display = "inline-block";
+
+		}
+
+
+	</script>
+</body>
+</html>
